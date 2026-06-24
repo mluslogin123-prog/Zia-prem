@@ -1,0 +1,25 @@
+{
+  "bot_token": "8905785486:AAHimQHCvNx6IgYKnRznslXrUrIwsclGlGg",
+  "admin_ids": [
+    8632939616
+  ],
+  "channel_username": "xeryzs",
+  "locked": false,
+  "global_limit": 5000,
+  "vip_limit": null,
+  "default_threads": 60,
+  "max_concurrent": 2,
+  "cooldown_sessions": 1,
+  "cooldown_minutes": 60,
+  "8630994723:AAEcBJt8u1VoJYDz5opCsnI7yFFj5x80dGM": "8630994723:AAEcBJt8u1VoJYDz5opCsnI7yFFj5x80dGM",
+  "8632939616": [],
+  "@ziaachannel": "zia",
+  "8905785486:AAHimQHCvNx6IgYKnRznslXrUrIwsclGlGg": "8905785486:AAHimQHCvNx6IgYKnRznslXrUrIwsclGlGg",
+  "max_lines_per_check": 500,
+  "maintenance_mode": false,
+  "maintenance_message": "\u2699\ufe0f Bot is under maintenance. Please try again later.",
+  "announcement_text": "",
+  "notify_admin_on_hit": true,
+  "welcome_message": "",
+  "bot_name": "ziaa seker \u1d206.0"
+}
