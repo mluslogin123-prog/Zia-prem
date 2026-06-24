@@ -303,7 +303,7 @@ def _test_proxy_sync(line: str, timeout: int = 10) -> tuple:
 DEFAULT_CONFIG = {
     "bot_token":           "8637212855:AAGYaZ4mv5S2RlEpOXaDktl1dyklKujVork",
     "admin_ids":           [7299555752],
-    "channel_username":    "YUTA PREMIUM CHECKER",
+    "channel_username":    "ZIAA PREMIUM CHECKER",
     "locked":              False,
     "global_limit":        None,
     "vip_limit":           None,
@@ -1880,7 +1880,7 @@ async def cmd_start(update,context):
         f" 🕒 <b>UPTIME:</b> <code>{uptime_str}</code>\n"
         f"{lim_s}{ml_s}{cd_s}{exp_s}{note_s}\n"
         f"{pe_sep()}\n"
-        f" 💎 <b>ᴏᴡɴᴇʀ:</b> @yuta_inl\n"
+        f" 💎 <b>ᴏᴡɴᴇʀ:</b> @maisanyvokei\n"
         f"{pe_sep()}\n"
         f" <i>Select an option below to proceed:</i>",
         reply_markup=kb, parse_mode=ParseMode.HTML)
@@ -1958,7 +1958,7 @@ async def cmd_help(update, context):
         f" 3️⃣ Set your Level/Clean filters\n"
         f" 4️⃣ Tap <b>RUN ENGINE</b>\n"
         f"{pe_sep()}\n"
-        f" 💎 <b>ᴏᴡɴᴇʀ:</b> @@yuta_in"
+        f" 💎 <b>ᴏᴡɴᴇʀ:</b> @@maisanyvokei"
     )
     await update.message.reply_text(help_text, parse_mode=ParseMode.HTML)
 
@@ -1970,8 +1970,8 @@ async def cmd_about(update, context):
         f" 🛡️ <b>BYPASS:</b> <code>GARENA-V4 ACTIVE</code>\n"
         f" ⚡ <b>THREADS:</b> <code>OPTIMIZED</code>\n"
         f"{pe_sep()}\n"
-        f" 👑 <b>ᴏᴡɴᴇʀ:</b> @yuta_inl\n"
-        f" 📢 <b>ᴄʜᴀɴɴᴇʟ:</b> @@yuta_inl\n"
+        f" 👑 <b>ᴏᴡɴᴇʀ:</b> @maisanyvokei\n"
+        f" 📢 <b>ᴄʜᴀɴɴᴇʟ:</b> @@maisanyvokei\n"
         f"{pe_sep()}\n"
         f" <i>The most advanced Garena CODM checker on Telegram. Built for speed and accuracy.</i>"
     )
@@ -2618,7 +2618,7 @@ async def cmd_batchkey(update, context):
     exp=compute_expiry(dtype,dval); keys=load_keys(); generated=[]
     dd={"hours":f"{dval}h","days":f"{dval}d","months":f"{dval}mo","lifetime":"Lifetime"}[dtype]
     for _ in range(count):
-        k=f"YUTA-{_uuid3.uuid4().hex[:8].upper()}-{_uuid3.uuid4().hex[:4].upper()}"
+        k=f"ZIAA-{_uuid3.uuid4().hex[:8].upper()}-{_uuid3.uuid4().hex[:4].upper()}"
         keys[k]={"max_users":mu,"used_by":[],"duration_type":dtype,"duration_val":dval,
                  "expires_at":exp,"created_at":datetime.now().isoformat(),"created_by":tg.id}
         generated.append(k)
@@ -3254,7 +3254,7 @@ async def on_callback(update,context):
             parts3=data.split("_"); dtype3=parts3[2]; dval3=int(parts3[3]); mu3=int(parts3[4])
             exp3=compute_expiry(dtype3,dval3)
             import uuid as _uuid
-            key3=f"TYRANT-{_uuid.uuid4().hex[:8].upper()}-{_uuid.uuid4().hex[:4].upper()}"
+            key3=f"ZIAA-{_uuid.uuid4().hex[:8].upper()}-{_uuid.uuid4().hex[:4].upper()}"
             dd3={"hours":f"{dval3}h","days":f"{dval3}d","months":f"{dval3}mo","lifetime":"Lifetime"}[dtype3]
             keys3=load_keys()
             keys3[key3]={"max_users":mu3,"used_by":[],"duration_type":dtype3,"duration_val":dval3,
@@ -3466,7 +3466,7 @@ async def on_callback(update,context):
             dval,mu=defaults[dtype]
             exp=compute_expiry(dtype,dval)
             import uuid as _uuid2
-            key=f"TYRANT-{_uuid2.uuid4().hex[:8].upper()}-{_uuid2.uuid4().hex[:4].upper()}"
+            key=f"ZIAA-{_uuid2.uuid4().hex[:8].upper()}-{_uuid2.uuid4().hex[:4].upper()}"
             dd={"hours":f"{dval}h","days":f"{dval}d","months":f"{dval}mo","lifetime":"Lifetime"}[dtype]
             keys_db=load_keys()
             keys_db[key]={"max_users":mu,"used_by":[],"duration_type":dtype,"duration_val":dval,
@@ -4797,7 +4797,7 @@ async def _handle_admin_text_input(update, context, uid, tg, cfg, action, text):
             await update.message.reply_text(f"{pe(1)} Invalid input. Use: <code>value max_users</code>",parse_mode=ParseMode.HTML,reply_markup=kb_admin_keys()); return
         exp=compute_expiry(dtype,dval)
         import uuid as _uuid
-        key=f"YUTA-{_uuid.uuid4().hex[:8].upper()}-{_uuid.uuid4().hex[:4].upper()}"
+        key=f"ZIAA-{_uuid.uuid4().hex[:8].upper()}-{_uuid.uuid4().hex[:4].upper()}"
         dd={"hours":f"{dval}h","days":f"{dval}d","months":f"{dval}mo","lifetime":"Lifetime"}[dtype]
         keys=load_keys()
         keys[key]={"max_users":mu,"used_by":[],"duration_type":dtype,"duration_val":dval,
@@ -4912,7 +4912,7 @@ async def _handle_admin_text_input(update, context, uid, tg, cfg, action, text):
         exp=compute_expiry(dtype,dval); keys=load_keys(); generated=[]
         dd={"hours":f"{dval}h","days":f"{dval}d","months":f"{dval}mo","lifetime":"Lifetime"}[dtype]
         for _ in range(count):
-            k=f"YUTA-{_uuid2.uuid4().hex[:8].upper()}-{_uuid2.uuid4().hex[:4].upper()}"
+            k=f"ZIAA-{_uuid2.uuid4().hex[:8].upper()}-{_uuid2.uuid4().hex[:4].upper()}"
             keys[k]={"max_users":mu,"used_by":[],"duration_type":dtype,"duration_val":dval,
                      "expires_at":exp,"created_at":datetime.now().isoformat(),"created_by":tg.id}
             generated.append(k)
@@ -5533,7 +5533,7 @@ async def cmd_generate_key(update,context):
         if mu<1: raise ValueError
     except: await update.message.reply_text(usage,parse_mode=ParseMode.HTML); return
     exp=compute_expiry(dt,dv)
-    key=f"TYRANT-{uuid.uuid4().hex[:8].upper()}-{uuid.uuid4().hex[:4].upper()}"
+    key=f"ZIAA-{uuid.uuid4().hex[:8].upper()}-{uuid.uuid4().hex[:4].upper()}"
     dd={"hours":f"{dv}h","days":f"{dv}d","months":f"{dv}mo","lifetime":"Lifetime"}[dt]
     keys=load_keys()
     keys[key]={"max_users":mu,"used_by":[],"duration_type":dt,"duration_val":dv,"expires_at":exp,
@@ -5565,7 +5565,7 @@ async def cmd_reseller_gen_key(update, context):
     except:
         await update.message.reply_text(usage, parse_mode=ParseMode.HTML); return
     exp = compute_expiry(dt, dv)
-    key = f"TYRANT-{uuid.uuid4().hex[:8].upper()}-{uuid.uuid4().hex[:4].upper()}"
+    key = f"ZIAA-{uuid.uuid4().hex[:8].upper()}-{uuid.uuid4().hex[:4].upper()}"
     dd = {"hours": f"{dv}h", "days": f"{dv}d", "months": f"{dv}mo", "lifetime": "Lifetime"}[dt]
     keys = load_keys()
     keys[key] = {"max_users": mu, "used_by": [], "duration_type": dt, "duration_val": dv,
